@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="jautajums">
+        <img src="" alt="Lebron" width="500">
+        <h1>"Kura NBA komanda pirmo reizi draftēja Džeimsu?"</h1>
+        <form onchange="document.getElementById(`talak`).style.display = `block`">
+            <input type="radio" name="option" id="option1"><label>Miami Heat</label>
+            <input type="radio" name="option" id="option2"><label>Cleveland Cavaliers</label><br>
+            <input type="radio" name="option" id="option3"><label>Los Angeles Lakers</label>
+            <input type="radio" name="option" id="option4"><label>Golden State Warriors</label>
+        </form>
+    </div>
+    <button id="talak" style="display: none;">Nākamais jautājums</button>
+    <script src="main.js"></script>
+</body>
+</html>
