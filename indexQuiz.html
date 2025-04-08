@@ -11,21 +11,176 @@
 </head>
 <body>
     <div id="atpakal" class="atpakal">
-        <h1>Atpakaļ uz galveno lapu</h1>
+        <a class="galv" href="index_main.html">Atpakaļ uz galveno lapu</a>
     </div>
-    <div id="jautajums" class="jautajums">
-        <h1>"Kura NBA komanda pirmo reizi draftēja Džeimsu?"</h1>
-        <img src="" alt="Lebron" width="500">
-        <form onchange="document.getElementById(`talak`).style.display = `block`">
-            <div id="pogas" class="pogas">
-                <input type="radio" name="option" id="option1"><label>Miami Heat</label>
-                <input type="radio" name="option" id="option2"><label>Cleveland Cavaliers</label><br>
-                <input type="radio" name="option" id="option3"><label>Los Angeles Lakers</label>
-                <input type="radio" name="option" id="option4"><label>Golden State Warriors</label>
-            </div>
-            <button class="talak" id="talak" style="display: none;">Nākamais jautājums</button>
-        </form>
-    </div>
+    <form id="quizForm" class="viktorina">
+        <div class="question active" data-index="0">
+            <h1>1. Kāds ir LeBron James pilnais vārds?</h1>
+            <img src="" alt="LeBron">
+            <label><input type="radio" name="q0" value="a"> LeBron Anthony James</label>
+            <label><input type="radio" name="q0" value="b"> LeBron Raymone James</label>
+            <label><input type="radio" name="q0" value="c"> LeBron Michael James</label>
+          </div>
+          
+          <div class="question" data-index="1">
+            <h1>2. Kādā gadā LeBron James tika draftēts NBA?</h1>
+            <img src="" alt="LeBron Draft">
+            <label><input type="radio" name="q1" value="a"> 2001</label>
+            <label><input type="radio" name="q1" value="b"> 2003</label>
+            <label><input type="radio" name="q1" value="c"> 2005</label>
+          </div>
+          
+          <div class="question" data-index="2">
+            <h1>3. Kura komanda viņu draftēja?</h1>
+            <img src="" alt="Draft">
+            <label><input type="radio" name="q2" value="a"> Miami Heat</label>
+            <label><input type="radio" name="q2" value="b"> Cleveland Cavaliers</label>
+            <label><input type="radio" name="q2" value="c"> Los Angeles Lakers</label>
+          </div>
+          
+          <div class="question" data-index="3">
+            <h1>4. Kurā komandā LeBron ieguva savu pirmo NBA titulu?</h1>
+            <img src="" alt="NBA Champion">
+            <label><input type="radio" name="q3" value="a"> Cleveland Cavaliers</label>
+            <label><input type="radio" name="q3" value="b"> Los Angeles Lakers</label>
+            <label><input type="radio" name="q3" value="c"> Miami Heat</label>
+          </div>
+          
+          <div class="question" data-index="4">
+            <h1>5. Cik NBA čempionu titulus LeBron ir izcīnījis?</h1>
+            <img src="" alt="Titles">
+            <label><input type="radio" name="q4" value="a"> 3</label>
+            <label><input type="radio" name="q4" value="b"> 4</label>
+            <label><input type="radio" name="q4" value="c"> 5</label>
+          </div>
+          
+          <div class="question" data-index="5">
+            <h1>6. Kura skaitļa krekla numuru LeBron visbiežāk valkājis?</h1>
+            <img src="" alt="Jersey Number">
+            <label><input type="radio" name="q5" value="a"> 6</label>
+            <label><input type="radio" name="q5" value="b"> 23</label>
+            <label><input type="radio" name="q5" value="c"> 32</label>
+          </div>
+          
+          <div class="question" data-index="6">
+            <h1>7. Kā sauc LeBron dibināto skolu Ohaio štatā?</h1>
+            <img src="" alt="School">
+            <label><input type="radio" name="q6" value="a"> King Academy</label>
+            <label><input type="radio" name="q6" value="b"> I PROMISE School</label>
+            <label><input type="radio" name="q6" value="c"> Akron Future School</label>
+          </div>
+          
+          <div class="question" data-index="7">
+            <h1>8. Kādā pozīcijā LeBron parasti spēlē?</h1>
+            <img src="" alt="Position">
+            <label><input type="radio" name="q7" value="a"> Centrs</label>
+            <label><input type="radio" name="q7" value="b"> Point guard</label>
+            <label><input type="radio" name="q7" value="c"> Small forward</label>
+          </div>
+          
+          <div class="question" data-index="8">
+            <h1>9. Kura LeBron filma iznāca 2021. gadā?</h1>
+            <img src="" alt="Movie">
+            <label><input type="radio" name="q8" value="a"> Hustle</label>
+            <label><input type="radio" name="q8" value="b"> Space Jam: A New Legacy</label>
+            <label><input type="radio" name="q8" value="c"> Coach Carter 2</label>
+          </div>
+          
+          <div class="question" data-index="9">
+            <h1>10. Kurā komandā viņš spēlēja pēc Miami Heat?</h1>
+            <img src="" alt="Return">
+            <label><input type="radio" name="q9" value="a"> Golden State Warriors</label>
+            <label><input type="radio" name="q9" value="b"> Cleveland Cavaliers</label>
+            <label><input type="radio" name="q9" value="c"> Boston Celtics</label>
+          </div>
+          
+          <div class="question" data-index="10">
+            <h1>11. Kur dzimis LeBron James?</h1>
+            <img src="" alt="Birthplace">
+            <label><input type="radio" name="q10" value="a"> Akron, Ohaio</label>
+            <label><input type="radio" name="q10" value="b"> Chicago, Ilinoisa</label>
+            <label><input type="radio" name="q10" value="c"> Losandželosa, Kalifornija</label>
+          </div>
+          
+          <div class="question" data-index="11">
+            <h1>12. Kāda ir viņa mammai vārds?</h1>
+            <img src="" alt="Mother">
+            <label><input type="radio" name="q11" value="a"> Gloria</label>
+            <label><input type="radio" name="q11" value="b"> Vanessa</label>
+            <label><input type="radio" name="q11" value="c"> Michelle</label>
+          </div>
+          
+          <div class="question" data-index="12">
+            <h1>13. Kā sauc viņa vecāko dēlu?</h1>
+            <img src="" alt="Son">
+            <label><input type="radio" name="q12" value="a"> Bryce</label>
+            <label><input type="radio" name="q12" value="b"> Bronny</label>
+            <label><input type="radio" name="q12" value="c"> LeBron James Jr.</label>
+          </div>
+          
+          <div class="question" data-index="13">
+            <h1>14. Cik reizes LeBron ir bijis NBA All-Star?</h1>
+            <img src="" alt="All-Star">
+            <label><input type="radio" name="q13" value="a"> 10</label>
+            <label><input type="radio" name="q13" value="b"> 13</label>
+            <label><input type="radio" name="q13" value="c"> 20+</label>
+          </div>
+          
+          <div class="question" data-index="14">
+            <h1>15. Kuru numuru LeBron valkāja Miami Heat komandā?</h1>
+            <img src="" alt="Heat Jersey">
+            <label><input type="radio" name="q14" value="a"> 6</label>
+            <label><input type="radio" name="q14" value="b"> 23</label>
+            <label><input type="radio" name="q14" value="c"> 24</label>
+          </div>
+          
+          <div class="question" data-index="15">
+            <h1>16. Kāds ir LeBron James segvārds NBA vidē?</h1>
+            <img src="" alt="Nickname">
+            <label><input type="radio" name="q15" value="a"> King James</label>
+            <label><input type="radio" name="q15" value="b"> King of the East</label>
+            <label><input type="radio" name="q15" value="c"> L-Train</label>
+          </div>
+          
+          
+          <div class="question" data-index="16">
+            <h1>17. Kāds bija LeBron segvārds jaunībā?</h1>
+            <img src="" alt="Nickname">
+            <label><input type="radio" name="q16" value="a"> King James</label>
+            <label><input type="radio" name="q16" value="b"> The Chosen One</label>
+            <label><input type="radio" name="q16" value="c"> Akron Avenger</label>
+          </div>
+          
+          <div class="question" data-index="17">
+            <h1>18. Kādā amatā viņš bieži darbojas ārpus basketbola?</h1>
+            <img src="" alt="Career">
+            <label><input type="radio" name="q17" value="a"> DJ</label>
+            <label><input type="radio" name="q17" value="b"> Aktieris un producents</label>
+            <label><input type="radio" name="q17" value="c"> Policists</label>
+          </div>
+          
+          <div class="question" data-index="18">
+            <h1>19. Vai LeBron ir izcīnījis olimpisko zelta medaļu?</h1>
+            <img src="" alt="Olympics">
+            <label><input type="radio" name="q18" value="a"> Jā</label>
+            <label><input type="radio" name="q18" value="b"> Nē</label>
+            <label><input type="radio" name="q18" value="c"> Tikai bronzu</label>
+          </div>
+          
+          <div class="question" data-index="19">
+            <h1>20. Kurā komandā LeBron spēlē 2024./2025. sezonā?</h1>
+            <img src="" alt="Current Team">
+            <label><input type="radio" name="q19" value="a"> Miami Heat</label>
+            <label><input type="radio" name="q19" value="b"> Cleveland Cavaliers</label>
+            <label><input type="radio" name="q19" value="c"> Los Angeles Lakers</label>
+          </div>
+          
+    
+        <button type="button" id="checkBtn">Check Answer</button>
+        <button type="button" id="nextBtn" style="display:none;">Next</button>
+        <div class="result" id="result"></div>
+    </form>
+    
     <script src="main.js"></script>
 </body>
 </html>
