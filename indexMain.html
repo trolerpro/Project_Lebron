@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Legoat</title>
+  </head>
+  <body>
+
+    <div class="augsa">
+      <a class="top" href="#biogr" >Biogrāfija</a>
+      <a class="top" href="#stats">Statistika</a>
+      <a class="top" href="#foto">Galerija</a>
+      <a class="top" href="indexQuiz.html">Viktorīna</a>
+    </div>
+
+    <div class="birthday-countdown">
+        <div class="countdown-container">
+            <div class="countdown-label">Laiks līdz LeBrona Džeimsa dzimšanas dienai:</div>
+            <div class="countdown-numbers">
+                <span id="days">00</span>d
+                <span id="hours">00</span>h
+                <span id="minutes">00</span>m
+                <span id="seconds">00</span>s
+            </div>
+        </div>
+    </div>
+
+    <h1 id="biogr">Biogrāfija</h1>
+    <section id="lebron-james-biography">
+        <h2>LeBron James – Biogrāfija</h2>
+
+        <p><strong>Pilns vārds:</strong> LeBron Raymone James</p>
+        <p><strong>Dzimšanas datums:</strong> 1984. gada 30. decembris</p>
+        <p><strong>Dzimšanas vieta:</strong> Akrona, Ohaio, ASV</p>
+        <p><strong>Augums:</strong> 2,06 m</p>
+        <p><strong>Svars:</strong> 113 kg</p>
+        <p><strong>Pozīcija:</strong> Uzbrucējs</p>
+        <p><strong>Pašreizējā komanda:</strong> Losandželosas "Lakers" (NBA)</p>
+        <p><strong>Segvārds:</strong> "Karalis Džeimss"</p>
+
+        <h3>Jaunība</h3>
+        <p>Lebronu Džeimsu audzināja viņa māte Glorija Džeimsa Akronā, Ohaio štatā. Kā dabisks sportists, viņš piesaistīja nacionālu uzmanību kā vidusskolas basketbola zvaigzne St. Vincent-St. Mary vidusskolā.</p>
+
+        <h3>NBA Karjera</h3>
+        <ul>
+            <li><strong>2003:</strong> Izvēlēts ar 1. numuru Klīvlendas "Cavaliers"</li>
+            <li><strong>2003–2010:</strong> Kļuva par NBA zvaigzni ar Klīvlendu</li>
+            <li><strong>2010–2014:</strong> Ieguva divus NBA čempionu titulus ar Maiami "Heat"</li>
+            <li><strong>2014–2018:</strong> Atgriezās Klīvlendā, uzvarot 2016. gada NBA čempionātā</li>
+            <li><strong>2018–Pašlaik:</strong> Pievienojās Losandželosas "Lakers", uzvarot 2020. gada čempionātā</li>
+        </ul>
+
+        <h3>Karjeras Sasniegumi</h3>
+        <ul>
+            <li>4× NBA čempions (2012, 2013, 2016, 2020)</li>
+            <li>4× NBA MVP (2009, 2010, 2012, 2013)</li>
+            <li>19× NBA Visu zvaigžņu spēle (līdz 2024. gadam)</li>
+            <li>NBA visu laiku rezultatīvākais spēlētājs (kopš 2023. gada)</li>
+            <li>2 Olimpiskās zelta medaļas (2008, 2012)</li>
+        </ul>
+
+        <h3>Ārpus laukuma</h3>
+        <p>Lebrons ir veiksmīgs uzņēmējs un filantrops. Caur Lebrona Džeimsa ģimenes fondu viņš atvēra I PROMISE skolu Akronā. Viņš arī ir SpringHill Entertainment līdzdibinātājs un aktīvs izglītības un sociālās taisnīguma aizstāvis.</p>
+
+        <h3>Personīgā dzīve</h3>
+        <p>Lebrons ir precējies ar Savannu Brinsonu. Viņiem ir trīs bērni: Bronijs, Braiss un Žuri. Viņa vecākais dēls, Bronijs Džeimss, seko tēva pēdām kā daudzsološs jauns basketbolists.</p>
+    </section>
+    
+    <h1 id="stats">Statistika</h1>
+    <button class="toggle-stats" onclick="toggleStats()">Rādīt/Slēpt Statistiku</button>
+    <div class="stats-table" id="statsTable" style="display: none;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sezona</th>
+                    <th>Komanda</th>
+                    <th>GP</th>
+                    <th>GS</th>
+                    <th>MIN</th>
+                    <th>FG%</th>
+                    <th>3P%</th>
+                    <th>FT%</th>
+                    <th>REB</th>
+                    <th>AST</th>
+                    <th>PTS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>2003-04</td><td>Cleveland Cavaliers</td><td>79</td><td>79</td><td>39.5</td><td>41.7</td><td>29.0</td><td>75.4</td><td>5.5</td><td>5.9</td><td>20.9</td></tr>
+                <tr><td>2004-05</td><td>Cleveland Cavaliers</td><td>80</td><td>80</td><td>42.4</td><td>47.2</td><td>35.1</td><td>75.0</td><td>7.4</td><td>7.2</td><td>27.2</td></tr>
+                <tr><td>2005-06</td><td>Cleveland Cavaliers</td><td>79</td><td>79</td><td>42.5</td><td>48.0</td><td>33.5</td><td>73.8</td><td>7.0</td><td>6.6</td><td>31.4</td></tr>
+                <tr><td>2006-07</td><td>Cleveland Cavaliers</td><td>78</td><td>78</td><td>40.9</td><td>47.6</td><td>31.9</td><td>69.8</td><td>6.7</td><td>6.0</td><td>27.3</td></tr>
+                <tr><td>2007-08</td><td>Cleveland Cavaliers</td><td>75</td><td>74</td><td>40.4</td><td>48.4</td><td>31.5</td><td>71.2</td><td>7.9</td><td>7.2</td><td>30.0</td></tr>
+                <tr><td>2008-09</td><td>Cleveland Cavaliers</td><td>81</td><td>81</td><td>37.7</td><td>48.9</td><td>34.4</td><td>78.0</td><td>7.6</td><td>7.2</td><td>28.4</td></tr>
+                <tr><td>2009-10</td><td>Cleveland Cavaliers</td><td>76</td><td>76</td><td>39.0</td><td>50.3</td><td>33.3</td><td>76.7</td><td>7.3</td><td>8.6</td><td>29.7</td></tr>
+                <tr><td>2010-11</td><td>Miami Heat</td><td>79</td><td>79</td><td>38.8</td><td>51.0</td><td>33.0</td><td>75.9</td><td>7.5</td><td>7.0</td><td>26.7</td></tr>
+                <tr><td>2011-12</td><td>Miami Heat</td><td>62</td><td>62</td><td>37.5</td><td>53.1</td><td>36.2</td><td>77.1</td><td>7.9</td><td>6.2</td><td>27.1</td></tr>
+                <tr><td>2012-13</td><td>Miami Heat</td><td>76</td><td>76</td><td>37.9</td><td>56.5</td><td>40.6</td><td>75.3</td><td>8.0</td><td>7.3</td><td>26.8</td></tr>
+                <tr><td>2013-14</td><td>Miami Heat</td><td>77</td><td>77</td><td>37.7</td><td>56.7</td><td>37.9</td><td>75.0</td><td>6.9</td><td>6.3</td><td>27.1</td></tr>
+                <tr><td>2014-15</td><td>Cleveland Cavaliers</td><td>69</td><td>69</td><td>36.1</td><td>48.8</td><td>35.4</td><td>71.0</td><td>6.0</td><td>7.4</td><td>25.3</td></tr>
+                <tr><td>2015-16</td><td>Cleveland Cavaliers</td><td>76</td><td>76</td><td>35.6</td><td>52.0</td><td>30.9</td><td>73.1</td><td>7.4</td><td>6.8</td><td>25.3</td></tr>
+                <tr><td>2016-17</td><td>Cleveland Cavaliers</td><td>74</td><td>74</td><td>37.8</td><td>54.8</td><td>36.3</td><td>67.4</td><td>8.6</td><td>8.7</td><td>26.4</td></tr>
+                <tr><td>2017-18</td><td>Cleveland Cavaliers</td><td>82</td><td>82</td><td>36.9</td><td>54.2</td><td>36.7</td><td>73.1</td><td>8.6</td><td>9.1</td><td>27.5</td></tr>
+                <tr><td>2018-19</td><td>Los Angeles Lakers</td><td>55</td><td>55</td><td>35.2</td><td>51.0</td><td>33.9</td><td>66.5</td><td>8.5</td><td>8.3</td><td>27.4</td></tr>
+                <tr><td>2019-20</td><td>Los Angeles Lakers</td><td>67</td><td>67</td><td>34.6</td><td>49.3</td><td>34.8</td><td>69.3</td><td>7.8</td><td>10.2</td><td>25.3</td></tr>
+                <tr><td>2020-21</td><td>Los Angeles Lakers</td><td>45</td><td>45</td><td>33.4</td><td>51.3</td><td>36.5</td><td>69.8</td><td>7.7</td><td>7.8</td><td>25.0</td></tr>
+                <tr><td>2021-22</td><td>Los Angeles Lakers</td><td>56</td><td>56</td><td>37.2</td><td>52.4</td><td>35.9</td><td>75.6</td><td>8.2</td><td>6.2</td><td>30.3</td></tr>
+                <tr><td>2022-23</td><td>Los Angeles Lakers</td><td>55</td><td>54</td><td>35.5</td><td>50.0</td><td>32.1</td><td>76.8</td><td>8.3</td><td>6.8</td><td>28.9</td></tr>
+                <tr><td>2023-24</td><td>Los Angeles Lakers</td><td>71</td><td>71</td><td>35.3</td><td>54.0</td><td>41.0</td><td>75.0</td><td>7.3</td><td>8.3</td><td>25.7</td></tr>
+                <tr><td>2024-25</td><td>Los Angeles Lakers</td><td>69</td><td>69</td><td>35.1</td><td>51.2</td><td>37.8</td><td>78.2</td><td>7.9</td><td>8.2</td><td>24.6</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <h1 id="foto">Galerija</h1>
+    <div class="image-gallery">
+        <div class="gallery-item">
+            <img src="images_main/lebrony_james.jpg" alt="LeBron James">
+        </div>
+        <div class="gallery-item">
+            <div class="image-scroll">
+                <img src="images_main/leheat.jpg" alt="LeBron Heat">
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="images_main/50k.jpg" alt="50k Points">
+        </div>
+        <div class="gallery-item">
+            <img src="images_main/jrsmith.jpg" alt="JR Smith">
+        </div>
+        <div class="gallery-item">
+            <img src="images_main/iguadala.jpg" alt="Iguodala">
+        </div>
+        <div class="gallery-item">
+            <img src="images_main/usa.jpg" alt="USA Team">
+        </div>
+        <div class="gallery-item">
+            <img src="images_main/lakers.jpg" alt="Lakers">
+        </div>
+        <div class="gallery-item">
+            <img src="images_main/kobe.jpg" alt="Kobe">
+        </div>
+        <div class="gallery-item">
+            <img src="images_main/signature.jpg" alt="Signature">
+        </div>
+        <div class="gallery-item">
+            <img src="images_main/greatness.jpg" alt="Greatness">
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <video controls>
+                    <source class="c1" src="video_main/blockedby.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video controls>
+                    <source src="video_main/highlites.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video controls>
+                    <source src="video_main/ledunk.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <button class="prev" type="button" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" type="button" onclick="moveSlide(1)">&#10095;</button>
+        
+    </div>
+
+<script src="main.js"></script>
+  </body>
+</html>
