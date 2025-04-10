@@ -1,12 +1,10 @@
 function updateBirthdayCountdown() {
     const now = new Date();
-    let birthday = new Date(now.getFullYear(), 11, 30); // December 30 (month is 0-based)
-    
-    // If birthday has passed this year, set for next year
+    let birthday = new Date(now.getFullYear(), 11, 30);
     if (now > birthday) {
         birthday = new Date(now.getFullYear() + 1, 11, 30);
     }
-    
+
     const difference = birthday - now;
     
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
@@ -20,10 +18,9 @@ function updateBirthdayCountdown() {
     document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
 }
 
-// Initialize countdown
 document.addEventListener('DOMContentLoaded', function() {
-    updateBirthdayCountdown(); // Initial call
-    setInterval(updateBirthdayCountdown, 1000); // Update every second
+    updateBirthdayCountdown();
+    setInterval(updateBirthdayCountdown, 1000);
 });
 
 let currentSlide = 0;
@@ -77,14 +74,27 @@ const nextBtn = document.getElementById("nextBtn");
 
 checkBtn.addEventListener('click', function() {
     const current = jautajumi[tagadJaut];
-    const atlasits = current.querySelector('input[type="radio"]:checked');
+    let isCorrect = false;
 
-    if (!atlasits) {
-        alert("Lūdzu izvēlies atbilžu variantu!");
-        return;
+    if (tagadJaut === 14) {
+        // Special handling for the text input question
+        const answer = document.getElementById('q14').value.trim();
+        if (answer === '') {
+            alert("Lūdzu ievadiet atbildi!");
+            return;
+        }
+        isCorrect = answer === '6';
+    } else {
+        // Handle radio button questions
+        const atlasits = current.querySelector('input[type="radio"]:checked');
+        if (!atlasits) {
+            alert("Lūdzu izvēlies atbilžu variantu!");
+            return;
+        }
+        isCorrect = atlasits.value === atbildes[tagadJaut];
     }
 
-    if (atlasits.value === atbildes[tagadJaut]) {
+    if (isCorrect) {
         rezult++;
         result.textContent = "Pareizi!";
     } else {
